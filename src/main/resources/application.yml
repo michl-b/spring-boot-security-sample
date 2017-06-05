@@ -1,0 +1,27 @@
+management:
+  security:
+    roles: ADMIN
+    enabled: false # make management endpoints accessable
+
+security:
+  basic:
+    enabled: false # disable basic security
+  user:
+    name: user
+    password: password
+    role: ADMIN
+
+endpoints:
+  health:
+    sensitive: false # make /health accessable
+
+---
+spring:
+    profiles: secure
+
+management:
+  security:
+    enabled: true
+security:
+  basic:
+    enabled: true
