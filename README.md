@@ -3,7 +3,7 @@
 ## run
 > security is deactivated by default
 ### with security activated
-> see SecurityConfig
+> see SecurityConfig and application.yml
 ```bash
 -Dspring.profiles.active=secure
 ```
